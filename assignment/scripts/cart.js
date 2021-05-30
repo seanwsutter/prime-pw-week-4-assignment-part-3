@@ -10,12 +10,19 @@ function addToCart(item) {
   // return console.log(true);
   /* QUESTION: required - 'return true indicating the item was added',
   Is this asking to indicate/appear true in the console log (text is purple in console log)*/
-}  console.log('Testing function, addToCart...');
+} // console.log('Testing function, addToCart...');
 addToCart('Eggs');
 addToCart('Bacon');
 addToCart('Cheese');
 addToCart('Coffee');
 // console.log('Listing items in myCart...');
+function listItems() {
+  for (let cartItem of myCart){
+    console.log(cartItem);
+  }
+}
+listItems();
+/*
 function listItems(array) {
   for (let i=0; i<array.length; i++) {
   console.log(array[i]);
