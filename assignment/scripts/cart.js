@@ -2,7 +2,7 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 let myCart = []; // I can change name to 'basket'
-
+console.log(myCart);
 function addToCart(item) {
   // console.log('Added item to cart:', item);
   myCart.push(item);
@@ -15,14 +15,25 @@ addToCart('Eggs');
 addToCart('Bacon');
 addToCart('Cheese');
 addToCart('Coffee');
-// console.log('Listing items in myCart...');
+console.log('Items in my cart...');
+/*
+function listItems() {
+  for (let cartItem of myCart){
+     return myCart;
+   }
+}
+listItems();
+*/
 function listItems() {
   for (let cartItem of myCart){
     console.log(cartItem);
   }
 }
-listItems();
+listItems();§
+
 /*
+BELOW IS OLD CODE
+
 function listItems(array) {
   for (let i=0; i<array.length; i++) {
   console.log(array[i]);
