@@ -24,12 +24,25 @@ function listItems() {
 }
 listItems();
 */
+
+// function that list each item in myCart array
 function listItems() {
   for (let cartItem of myCart){
     console.log(cartItem);
   }
 }
-listItems();§
+listItems();
+
+// function that declares myCart variable to nothing or empty
+function emptyCart() {
+  myCart = [];
+}
+console.log('Emptying myCart...', emptyCart());
+
+// STRETCH Goal
+
+
+
 
 /*
 BELOW IS OLD CODE
